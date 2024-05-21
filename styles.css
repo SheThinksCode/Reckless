@@ -1,0 +1,676 @@
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #ff44a1, #007bff); /* Gradient background */
+    transition: background-color 0.5s ease;
+    color: #ffffff; /* White text color for better contrast */
+}
+
+body.third-page {
+    background: linear-gradient(90deg, #ff44a1, #007bff); /* Gradient background */
+    color: #ffffff; /* White text color for better contrast */
+}
+
+.blue-background {
+    background-color: #ffffff; /* White background color */
+}
+
+.blue-background-section {
+    margin-top: 50vh; /* Starts from the middle of the viewport */
+    padding-bottom: 50vh; /* Ensures blue background covers the entire second half */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8em;
+    background-color: transparent; /* Ensure header background remains transparent */
+    color: #fdfdfd;
+    z-index: 2; /* Ensure header stays above other content */
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 70px; /* Adjust left position as needed */
+    transform: translateY(-50%);
+    font-size: 2em;
+    font-weight: 800;
+}
+
+header ul {
+    position: absolute;
+    top: 50%;
+    right: 14em; /* Adjust right position as needed */
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 1.5em; /* Adjust margin as needed */
+}
+
+.field-search {
+    position: absolute;
+    top: 50%;
+    right: 200px; /* Adjust right position as needed */
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0 0.3em;
+}
+
+.field-search input {
+    border-radius: 1em;
+    padding: 0.3em 1em;
+    border: 0.2em solid #fff;
+}
+
+.field-search img {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 0.3em;
+}
+
+.header-image1 {
+    position: absolute;
+    top: 40%;
+    left: -30%;
+    width: 250px;
+    transform: translate(230%, -50%);
+    animation: moveImage1 45s linear infinite alternate; /* Adjust animation duration and timing as needed */
+}
+
+.content {
+    margin-top: 8em; /* Adjust this value to match the height of your header */
+}
+
+ul {
+    margin-right: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+li a:hover {
+    border-bottom: 0.1em solid #fff;
+}
+
+.field-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 0.3em;
+}
+
+.field-search input {
+    border-radius: 1em;
+    padding: 0.3em 1em; /* Adjust padding */
+    border: 0.2em solid #fff;
+}
+
+.field-search img {
+    margin-top: 0.2em;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 0.3em;
+}
+
+.notes {
+    position: absolute; /* or position: fixed; */
+    width: 15%;
+    height: auto;
+    top: 224%; /* Adjust top position as needed */
+    left: 66%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%);
+}
+
+.notes-2 {
+    position: absolute; /* or position: fixed; */
+    width: 15%;
+    height: auto;
+    top: 224%; /* Adjust top position as needed */
+    left: 32%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%);
+}
+
+
+.black-header {
+    position: fixed; /* Change to fixed positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11vh; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+    background-color: #000; 
+
+}
+
+.logo{
+    left: 70px;
+    
+}
+
+
+.countdown{
+    position: absolute;
+    top: 205%;
+    left: 36%;
+
+}
+
+
+.img-line{
+    position: absolute;
+    top: 155.2%;
+    left: -37.9%;
+    width: 2550px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background-color: rgb(255, 255, 255); /* Change the last value for the opacity (0.5 is 50% opacity) */
+  }
+
+  .img-line2{
+    position: absolute;
+    top: 53%;
+    left: -37.9%;
+    width: 2550px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background-color: rgb(255, 255, 255); /* Change the last value for the opacity (0.5 is 50% opacity) */
+  }
+
+.img-line3{
+    position: absolute;
+    top: 290.5%;
+    left: -37.9%;
+    width: 2550px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background-color: rgb(255, 255, 255); /* Change the last value for the opacity (0.5 is 50% opacity) */
+  }
+
+  .img-line4{
+    position: absolute;
+    top: 390.5%;
+    left: -37.9%;
+    width: 2550px;
+    
+
+}
+
+.overlay1 {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+    height: 47%;
+    background-color: rgb(255, 255, 255); /* Change the last value for the opacity (0.5 is 50% opacity) */
+  }
+
+
+.yet-another-image, .flower-2 {
+    position: absolute; /* Set the position to absolute */
+    z-index: 1; /* Ensure the flowers appear above the video (which typically has z-index: 2) */
+    /* Add any other styling you need for the flowers */
+}
+
+.yet-another-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    top: 1220px; /* Adjust the top position as needed */
+    left: 390px; /* Adjust the left position as needed */
+}
+
+.flower-2 {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    top: 1720px; /* Adjust the top position as needed */
+    right: 400px; /* Adjust the right position as needed */
+}
+
+
+.additional-content {
+    min-height: 100vh; /* Ensure content takes up at least viewport height */
+}
+
+.centered-video {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Adjust width as needed */
+    border: 25px solid #ffffff; /* Add a 2px solid white border */
+    box-sizing: border-box; /* Ensure border size is included in element's total width and height */
+}
+
+/* Hide video controls */
+.centered-video::-webkit-media-controls {
+    display: none;
+}
+
+.centered-video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+
+.countdown-banner {
+    position: absolute;
+    bottom: -1250px; /* Adjust the distance from the bottom as needed */
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255); /* White background */
+    color: rgb(0, 0, 0);
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px; /* Adjust the width as needed */
+}
+
+  .countdown-box {
+    text-align: center;
+  }
+  
+  .countdown-box span {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .countdown-box span:first-child {
+    font-size: 36px; /* Adjust the font size for the numbers as needed */
+  }
+
+
+.image-container {
+    position: relative;
+    background-color: white;
+}
+
+.adjustable-image {
+    position: absolute;
+    top: 915px; /* Adjust top position */
+    left: 450px; /* Adjust left position */
+    /* You can adjust other properties like width, height, etc. as needed */
+    width: 50%;
+}
+
+
+.year-image{
+    position: relative;
+    left: 720px;
+    top: -60px;
+}
+
+.another-image {
+    margin-left: 1200px; /* Adjust the left margin as needed */
+    margin-top: -290px; /* Adjust the top margin as needed */
+}
+
+.aftermovie-image{
+    position: absolute;
+    left: 36%;
+    top: 100%;
+}
+
+
+.popcorn{
+    position: absolute;
+    left: 31%;
+    top: 112%;
+}
+
+
+.books {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.books img {
+    width: 5em;
+}
+
+.books div {
+    position: absolute;
+    display: block;
+}
+
+.books div:nth-child(1) {
+    left: 20%;
+    animation: booksFall 20s linear infinite;
+}
+
+.books div:nth-child(2) {
+    left: 50%;
+    animation: booksFall 14s infinite linear;
+}
+
+.books div:nth-child(3) {
+    left: 70%;
+    animation: booksFall 12s infinite linear;
+}
+
+.books div:nth-child(4) {
+    left: 5%;
+    animation: booksFall 15s infinite linear;
+}
+
+.books div:nth-child(5) {
+    left: 85%;
+    animation: booksFall 18s infinite linear;
+}
+
+.books div:nth-child(6) {
+    left: 90%;
+    animation: booksFall 12s infinite linear;
+}
+
+.books div:nth-child(7) {
+    left: 15%;
+    animation: booksFall 14s infinite linear;
+}
+
+.books div:nth-child(8) {
+    left: 60%;
+    animation: booksFall 15s infinite linear;
+}
+
+@keyframes booksFall {
+    0% {
+        opacity: 1; /* Start with full opacity */
+        transform: translateY(0); /* Start from the current position */
+    }
+
+    16% {
+        opacity: 1; /* Maintain opacity */
+        transform: translateY(100px); /* Move up */
+    }
+
+    100% {
+        opacity: 1; /* Maintain opacity */
+        transform: translateY(0); /* Return to the original position */
+    }
+}
+
+
+/* 
+    20% {
+        transform: translateY(-50px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        top: 110%;
+        transform: translateY(-100px);
+    }
+} */
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 17em;
+}
+
+section p {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+section img {
+    width: 25em;
+}
+
+.header-image {
+    position: absolute;
+    top: -50;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17%; /* Adjust width as needed */
+    z-index: -1; /* Ensure the image stays behind the header content */
+}
+
+.bigger-image { 
+    width: 100%; /*Adjust width as needed */
+    height: 100%; /*Maintain aspect ratio */
+    top: 40px;
+    }
+
+
+
+/* Apply blue background to the body when it has the 'third-page' class */
+body.third-page {
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color for better contrast */
+}
+
+
+.overlay-image {
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    width: 60%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    z-index: 2; /* Ensure the image appears on top of the video */
+}
+
+
+.video-wrapper{
+    position: absolute;
+    left: 47%;
+    top: 155%;
+}
+
+.Screen{
+    position: absolute;
+    left: -250%;
+    top: -99%;
+}
+
+.power{
+    position: absolute;
+    left: 35%;
+    top: 283%;
+}
+
+.tv-gif{
+    position: absolute;
+    left: 61%;
+    top: 113%
+}
+
+.rec-gif{
+
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    top: 132%;
+    width: 200px;
+}
+
+.insta-logo{
+    position: relative;
+    left: 1640px;
+    top: 52px;
+}
+
+.fb-logo{
+    position: relative;
+    left: 1680px;
+    top: 23px;
+}
+
+.twitter-logo{
+    position: relative;
+    left: 1720px;
+    top: -8px;
+}
+
+.tiktok-logo{
+    position: relative;
+    left: 1757px;
+    top: -40px;
+}
+
+
+
+section:nth-of-type(1) h1 {
+    /* CSS styles */
+    font-family: myReckless;
+      text-transform: uppercase;
+      color: white;
+      font-size: 15vw;
+      left: 70px;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      top: 50%;
+      width: 74%;
+      text-align: center;
+      -webkit-text-stroke: 3px white;
+      animation: glow 1.5s ease-in-out infinite alternate; /* Add animation for glow effect */
+  }
+  
+  @keyframes glow {
+      0% {
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+      100% {
+          text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+                       0 0 30px rgba(255, 255, 255, 0.6),
+                       0 0 40px rgba(255, 255, 255, 0.4),
+                       0 0 50px rgba(255, 255, 255, 0.2);
+      }
+  }
+
+  
+  @media (max-width: 700px) {
+    body {
+        background: red;
+    }
+  }
+
+
+  .gallery-text{
+    position: relative;
+    top: 185%;
+    left: 36%;
+  }
+  .gallery{
+    position:relative;
+    width:300px;
+    height:200px;
+    top: 1700px;
+    left: 800px;
+    transform-style:preserve-3d;
+    animation:rotate 35s linear infinite;
+  }
+  
+  @keyframes rotate{
+    from{
+      transform:perspective(1200px) rotateY(0deg);
+    }
+    
+    to{
+      transform:perspective(1200px) rotateY(360deg);
+    }
+  }
+  
+  .gallery span{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-origin:center;
+    transform-style:preserve-3d;
+    transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  }
+  
+  .gallery span img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .gallery-view{
+    position: absolute;
+    top :390%;
+    left: 30%;
+  }
+
+
+  .custom-text {
+      position: absolute; /* Position the text absolutely */
+      top: 4200px; /* Adjust top position */
+      left: 680px; /* Adjust left position */
+      font-family: cursive,"Script MT"; /* Change the font to Arial or any other font */
+      font-weight: bold; /* Make the text bold */
+      color: black; /* Set the color to black */
+      font-size: 30px; /* Adjust font size as needed */
+  }
+
+  .she-thinks-code {
+    font-family: "Courier New", Courier, monospace; /* Change the font for "SheThinks Code" */
+}

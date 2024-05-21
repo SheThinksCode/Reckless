@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reckless - Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+        @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+        @font-face {
+            font-family: myReckless;
+            src: url(belgant-aesthetic.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        body {
+            background-color: #f60588;
+            transition: 2s all;
+        }
+
+        section {
+            height: 200vh;
+        }
+
+        h1 {
+            margin: 15rem;
+        }
+
+        .lightCyan {
+            background-color: #000000;
+        }
+
+        .darkSkyBlue {
+            background-color: #f7b2d8;
+        }
+
+        .aquamarine {
+            background-color: #ffffff;
+        }
+
+        .electricBlue {
+            background-color: #000000;
+        }
+
+        html, body {
+            font-family: 'Dosis';
+            font-weight: 300;
+        }
+
+        /* Target the first <h1> tag within the first <section> */
+        section:nth-of-type(1) h1 {
+            /* CSS styles */
+            font-family: myReckless;
+            text-transform: uppercase;
+            color: white;
+            font-size: 15vw;
+            left: 0;
+            line-height: 200px;
+            margin-top: -100px;
+            position: absolute;
+            top: 50%;
+            width: 74%;
+            text-align: center;
+            -webkit-text-stroke: 3px white;
+            animation: glow 1.5s ease-in-out infinite alternate; /* Add animation for glow effect */
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+                             0 0 30px rgba(255, 255, 255, 0.6),
+                             0 0 40px rgba(255, 255, 255, 0.4),
+                             0 0 50px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        section:nth-of-type(2) h1 {
+          /* CSS styles */
+          font-family: myReckless;
+          text-transform: uppercase;
+          color: white;
+          font-size: 15vw;
+          left: 0;
+          line-height: 200px;
+          margin-top: -100px;
+          position: absolute;
+          top: 310%;
+          width: 74%;
+          text-align: center;
+          -webkit-text-stroke: 3px white;
+          animation: glow 1.5s ease-in-out infinite alternate; /* Add animation for glow effect */
+      }
+
+      @keyframes glow {
+          0% {
+              text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          }
+          100% {
+              text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+                           0 0 30px rgba(255, 255, 255, 0.6),
+                           0 0 40px rgba(255, 255, 255, 0.4),
+                           0 0 50px rgba(255, 255, 255, 0.2);
+          }
+      }
+
+
+      section:nth-of-type(3) h1 {
+        /* CSS styles */
+        font-family: myReckless;
+        text-transform: uppercase;
+        color: white;
+        font-size: 15vw;
+        left: 0;
+        line-height: 200px;
+        margin-top: -100px;
+        position: absolute;
+        top: 590%;
+        width: 74%;
+        text-align: center;
+        -webkit-text-stroke: 3px white;
+        animation: glow 1.5s ease-in-out infinite alternate; /* Add animation for glow effect */
+    }
+
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        100% {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+                         0 0 30px rgba(255, 255, 255, 0.6),
+                         0 0 40px rgba(255, 255, 255, 0.4),
+                         0 0 50px rgba(255, 255, 255, 0.2);
+        }
+    }
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10vmin;
+            overflow: hidden;
+            transform: skew(5deg);
+        }
+
+        .container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 5px;
+        }
+
+
+        .gallery-22 {
+          position: absolute;
+          top: 70%; 
+          left: 12%; 
+          opacity: 0;
+          transform: translate(-50%, -50%) translateY(50px); 
+          transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      
+      .gallery-22.animate {
+          opacity: 1;
+          transform: translateY(0);
+      }
+
+
+      .image2{
+        position: absolute;
+        top: 70%; 
+        left: 32%; 
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+      
+    .image2.animate{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .image3{
+        position: absolute;
+        top: 70%; 
+        left: 50%; 
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .image3.animate{
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .image4 {
+        position: absolute;
+        top: 70%; 
+        left: 70%; 
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image4.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image5 {
+        position: absolute;
+        top: 93%; 
+        left: 12%; 
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image5.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image6 {
+        position: absolute;
+        top: 93%; 
+        left: 30%; 
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image6.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .image7 {
+        position: absolute;
+        top: 93%; 
+        left: 48%; 
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image7.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .image8 {
+        position: absolute;
+        top: 103%; 
+        left: 66%; 
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image8.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+
+    .image9 {
+        position: absolute;
+        top: 126%;
+        left: 12%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image9.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image10 {
+        position: absolute;
+        top: 126%;
+        left: 30%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image10.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image11 {
+        position: absolute;
+        top: 126%;
+        left: 48%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image11.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image12 {
+        position: absolute;
+        top: 136%;
+        left: 66%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image12.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image13 {
+        position: absolute;
+        top: 159%;
+        left: 12%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image13.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image14 {
+        position: absolute;
+        top: 159%;
+        left: 30%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image14.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image15 {
+        position: absolute;
+        top: 159%;
+        left: 48%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image15.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image16 {
+        position: absolute;
+        top: 169%;
+        left: 66%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image16.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+
+    .image17 {
+        position: absolute;
+        top: 192%;
+        left: 12%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image17.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image18 {
+        position: absolute;
+        top: 192%;
+        left: 30%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image18.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image19 {
+        position: absolute;
+        top: 192%;
+        left: 48%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image19.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image20 {
+        position: absolute;
+        top: 202%;
+        left: 66%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image20.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image21 {
+        position: absolute;
+        top: 225%;
+        left: 12%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image21.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image22 {
+        position: absolute;
+        top: 225%;
+        left: 30%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image22.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image23 {
+        position: absolute;
+        top: 225%;
+        left: 48%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image23.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image24 {
+        position: absolute;
+        top: 235%;
+        left: 66%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image24.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image25 {
+        position: absolute;
+        top: 258%;
+        left: 12%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image25.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .image26 {
+        position: absolute;
+        top: 258%;
+        left: 30%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .image26.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .Image1{
+        position: absolute;
+        top: 350%;
+        left: 12%;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .Image1.animate{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .Image2{
+      position: absolute;
+      top: 350%; 
+      left: 32%; 
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px); 
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+    
+  .Image2.animate{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .Image3{
+      position: absolute;
+      top: 350%; 
+      left: 50%; 
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px); 
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .Image3.animate{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .Image4 {
+      position: absolute;
+      top: 350%; 
+      left: 70%; 
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px); 
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image4.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image5 {
+      position: absolute;
+      top: 372%; 
+      left: 12%; 
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px); 
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image5.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image6 {
+      position: absolute;
+      top: 372%; 
+      left: 30%; 
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px); 
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image6.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .Image7 {
+      position: absolute;
+      top: 372%; 
+      left: 48%; 
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px); 
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image7.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .Image8 {
+      position: absolute;
+      top: 383%; 
+      left: 66%; 
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px); 
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image8.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+
+  .Image9 {
+      position: absolute;
+      top: 409.5%;
+      left: 12%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image9.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image10 {
+      position: absolute;
+      top: 405%;
+      left: 30%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image10.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image11 {
+      position: absolute;
+      top: 405%;
+      left: 48%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image11.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image12 {
+      position: absolute;
+      top: 415.5%;
+      left: 66%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image12.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image13 {
+      position: absolute;
+      top: 442%;
+      left: 12%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image13.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image14 {
+      position: absolute;
+      top: 437.5%;
+      left: 30%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image14.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image15 {
+      position: absolute;
+      top: 437.5%;
+      left: 48%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image15.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image16 {
+      position: absolute;
+      top: 448%;
+      left: 66%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image16.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+
+  .Image17 {
+      position: absolute;
+      top: 475%;
+      left: 12%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image17.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image18 {
+      position: absolute;
+      top: 470.5%;
+      left: 30%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image18.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image19 {
+      position: absolute;
+      top: 470.5%;
+      left: 48%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image19.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .Image20 {
+      position: absolute;
+      top: 481%;
+      left: 66%;
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .Image20.animate {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+
+
+  .img1{
+    position: absolute;
+    top: 625%;
+    left: 12%;
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img1.animate{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img2{
+  position: absolute;
+  top: 625%; 
+  left: 32%; 
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img2.animate{
+opacity: 1;
+transform: translateY(0);
+}
+
+.img3{
+  position: absolute;
+  top: 625%; 
+  left: 50%; 
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img3.animate{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img4 {
+  position: absolute;
+  top: 625%; 
+  left: 70%; 
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img4.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img5 {
+  position: absolute;
+  top: 658%; 
+  left: 12%; 
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img5.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img6 {
+  position: absolute;
+  top: 658%; 
+  left: 30%; 
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img6.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img7 {
+  position: absolute;
+  top: 658%; 
+  left: 48%; 
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img7.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img8 {
+  position: absolute;
+  top: 658%; 
+  left: 66%; 
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img8.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.img9 {
+  position: absolute;
+  top: 691%;
+  left: 12%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img9.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img10 {
+  position: absolute;
+  top: 691%;
+  left: 30%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img10.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img11 {
+  position: absolute;
+  top: 691%;
+  left: 48%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img11.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img12 {
+  position: absolute;
+  top: 691%;
+  left: 66%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img12.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img13 {
+  position: absolute;
+  top: 724%;
+  left: 12%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img13.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img14 {
+  position: absolute;
+  top: 724%;
+  left: 30%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img14.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img15 {
+  position: absolute;
+  top: 724%;
+  left: 48%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img15.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img16 {
+  position: absolute;
+  top: 724%;
+  left: 66%;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img16.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.img-line{
+    position: absolute;
+    top: 715%;
+    left: -37.9%;
+    width: 2550px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+    height: 47%;
+    background-color: rgb(255, 255, 255); /* Change the last value for the opacity (0.5 is 50% opacity) */
+  }
+
+    </style>
+</head>
+<body>
+
+
+<section>
+    <h1 id="third-h1">2021</h1>
+    <div class="container">
+        <img src="Gallery/Posters/img1.jpeg" alt="Image 1">
+        <img src="Gallery/Posters/img2.jpeg" alt="Image 2">
+        <img src="Gallery/Posters/img3.jpeg" alt="Image 3">
+        <img src="Gallery/Posters/img4.jpeg" alt="Image 4">
+        <img src="Gallery/Posters/img5.jpeg" alt="Image 5">
+        <img src="Gallery/Posters/img7.jpeg" alt="Image 6">
+        <img src="Gallery/Posters/img6.jpeg" alt="Image 7">
+        <img src="Gallery/Posters/img9.jpeg" alt="Image 8">
+
+    </div>
+
+    <div class="gallery-22">
+          <img src="Gallery/2021/IMG_1.PNG" alt="Image 1" height="200" width="350">
+      </div>
+
+      <div class="image2">
+        <img src="Gallery/2021/IMG_2.PNG" alt="Image 2" height="200" width="300">
+    </div>
+
+    <div class="image3">
+        <img src="Gallery/2021/IMG_3.PNG" alt="Image 3" height="200" width="350">
+    </div>
+
+    <div class="image4">
+        <img src="Gallery/2021/IMG_4.PNG" alt="Image 4" height="300" width="300">
+    </div>
+
+    <div class="image5">
+        <img src="Gallery/2021/IMG_5.PNG" alt="Image 5" height="300" width="300">
+    </div>
+
+    <div class="image6">
+        <img src="Gallery/2021/IMG_6.PNG" alt="Image 6" height="300" width="300">
+    </div>
+
+    <div class="image7">
+        <img src="Gallery/2021/IMG_7.PNG" alt="Image 7" height="300" width="300">
+    </div>
+
+    <div class="image8">
+        <img src="Gallery/2021/IMG_8.PNG" alt="Image 8" height="300" width="300">
+    </div>
+
+    <div class="image9">
+        <img src="Gallery/2021/IMG_9.PNG" alt="Image 9" height="300" width="300">
+    </div>
+    
+    <div class="image10">
+        <img src="Gallery/2021/IMG_10.PNG" alt="Image 10" height="300" width="300">
+    </div>
+    
+    <div class="image11">
+        <img src="Gallery/2021/IMG_11.PNG" alt="Image 11" height="300" width="300">
+    </div>
+    
+    <div class="image12">
+        <img src="Gallery/2021/IMG_12.PNG" alt="Image 12" height="300" width="300">
+    </div>
+    
+    <div class="image13">
+        <img src="Gallery/2021/IMG_13.PNG" alt="Image 13" height="300" width="300">
+    </div>
+    
+    <div class="image14">
+        <img src="Gallery/2021/IMG_14.PNG" alt="Image 14" height="300" width="300">
+    </div>
+    
+    <div class="image15">
+        <img src="Gallery/2021/IMG_15.PNG" alt="Image 15" height="300" width="300">
+    </div>
+    
+    <div class="image16">
+        <img src="Gallery/2021/IMG_16.PNG" alt="Image 16" height="300" width="300">
+    </div>
+    
+    <div class="image17">
+        <img src="Gallery/2021/IMG_17.PNG" alt="Image 17" height="300" width="300">
+    </div>
+    
+    <div class="image18">
+        <img src="Gallery/2021/IMG_18.PNG" alt="Image 18" height="300" width="300">
+    </div>
+    
+    <div class="image19">
+        <img src="Gallery/2021/IMG_19.PNG" alt="Image 19" height="300" width="300">
+    </div>
+    
+    <div class="image20">
+        <img src="Gallery/2021/IMG_20.PNG" alt="Image 20" height="300" width="300">
+    </div>
+    
+    <div class="image21">
+        <img src="Gallery/2021/IMG_21.PNG" alt="Image 21" height="300" width="300">
+    </div>
+    
+    <div class="image22">
+        <img src="Gallery/2021/IMG_22.PNG" alt="Image 22" height="300" width="300">
+    </div>
+    
+    <div class="image23">
+        <img src="Gallery/2021/IMG_23.PNG" alt="Image 23" height="300" width="300">
+    </div>
+    
+    <div class="image24">
+        <img src="Gallery/2021/IMG_24.PNG" alt="Image 24" height="300" width="300">
+    </div>
+    
+    <div class="image25">
+        <img src="Gallery/2021/IMG_25.PNG" alt="Image 25" height="300" width="300">
+    </div>
+    
+    <div class="image26">
+        <img src="Gallery/2021/IMG_26.PNG" alt="Image 26" height="300" width="300">
+    </div>
+    
+
+
+</section>
+
+
+
+
+
+<section>
+    <h1 id="fourth-h1">School Tour</h1>
+</section>
+
+<div class="Image1">
+    <img src="Gallery/School_tour/Image1.PNG" alt="Image1" height="200" width="350">
+</div>
+
+<div class="Image2">
+  <img src="Gallery/School_tour/Image2.PNG" alt="Image2" height="200" width="300">
+</div>
+
+<div class="Image3">
+  <img src="Gallery/School_tour/Image3.PNG" alt="Image3" height="200" width="350">
+</div>
+
+<div class="Image4">
+  <img src="Gallery/School_tour/Image4.PNG" alt="Image4" height="300" width="300">
+</div>
+
+<div class="Image5">
+  <img src="Gallery/School_tour/Image5.PNG" alt="Image5" height="350" width="300">
+</div>
+
+<div class="Image6">
+    <img src="Gallery/School_tour/Image6.PNG" alt="Image6" height="300" width="300">
+</div>
+
+<div class="Image7">
+  <img src="Gallery/School_tour/Image7.PNG" alt="Image7" height="300" width="300">
+</div>
+
+<div class="Image8">
+  <img src="Gallery/School_tour/Image8.PNG" alt="Image8" height="300" width="300">
+</div>
+
+<div class="Image9">
+  <img src="Gallery/School_tour/Image9.PNG" alt="Image9" height="300" width="300">
+</div>
+
+<div class="Image10">
+  <img src="Gallery/School_tour/Image10.PNG" alt="Image10" height="300" width="300">
+</div>
+
+<div class="Image11">
+    <img src="Gallery/School_tour/Image11.PNG" alt="Image11" height="300" width="300">
+</div>
+
+<div class="Image12">
+  <img src="Gallery/School_tour/Image12.PNG" alt="Image12" height="300" width="300">
+</div>
+
+<div class="Image13">
+  <img src="Gallery/School_tour/Image13.PNG" alt="Image13" height="300" width="300">
+</div>
+
+<div class="Image14">
+  <img src="Gallery/School_tour/Image14.PNG" alt="Image14" height="300" width="300">
+</div>
+
+<div class="Image15">
+  <img src="Gallery/School_tour/Image15.PNG" alt="Image15" height="300" width="300">
+</div>
+
+<div class="Image16">
+    <img src="Gallery/School_tour/Image16.PNG" alt="Image16" height="300" width="300">
+</div>
+
+<div class="Image17">
+  <img src="Gallery/School_tour/Image17.PNG" alt="Image17" height="300" width="300">
+</div>
+
+<div class="Image18">
+  <img src="Gallery/School_tour/Image18.PNG" alt="Image18" height="300" width="300">
+</div>
+
+<div class="Image19">
+  <img src="Gallery/School_tour/Image19.PNG" alt="Image19" height="300" width="300">
+</div>
+
+<div class="Image20">
+  <img src="Gallery/School_tour/Image20.PNG" alt="Image20" height="300" width="300">
+</div>
+
+
+<section>
+    <h1 id="fifth-h1">Grade Town</h1>
+
+    <div class="img1">
+        <img src="Gallery/GradeTown/img1.PNG" alt="img1" height="300" width="300">
+    </div>
+    
+    <div class="img2">
+      <img src="Gallery/GradeTown/img2.PNG" alt="img2" height="300" width="300">
+    </div>
+    
+    <div class="img3">
+      <img src="Gallery/GradeTown/img3.PNG" alt="img3" height="300" width="300">
+    </div>
+    
+    <div class="img4">
+      <img src="Gallery/GradeTown/img4.PNG" alt="img4" height="300" width="300">
+    </div>
+    
+    <div class="img5">
+      <img src="Gallery/GradeTown/img5.PNG" alt="img5" height="300" width="300">
+    </div>
+    
+    <div class="img6">
+        <img src="Gallery/GradeTown/img6.PNG" alt="img6" height="300" width="300">
+    </div>
+    
+    <div class="img7">
+      <img src="Gallery/GradeTown/img7.PNG" alt="img7" height="300" width="300">
+    </div>
+    
+    <div class="img8">
+      <img src="Gallery/GradeTown/img8.PNG" alt="img8" height="300" width="300">
+    </div>
+    
+    <div class="img9">
+      <img src="Gallery/GradeTown/img9.PNG" alt="img9" height="300" width="300">
+    </div>
+    
+    <div class="img10">
+      <img src="Gallery/GradeTown/img10.PNG" alt="img10" height="300" width="300">
+    </div>
+    
+    <div class="img11">
+        <img src="Gallery/GradeTown/img11.PNG" alt="img11" height="300" width="300">
+    </div>
+    
+    <div class="img12">
+      <img src="Gallery/GradeTown/img12.PNG" alt="img12" height="300" width="300">
+    </div>
+    
+    <div class="img13">
+      <img src="Gallery/GradeTown/img13.PNG" alt="img13" height="300" width="300">
+    </div>
+    
+    <div class="img14">
+      <img src="Gallery/GradeTown/img14.PNG" alt="img14" height="300" width="300">
+    </div>
+    
+    <div class="img15">
+      <img src="Gallery/GradeTown/img15.PNG" alt="img15" height="300" width="300">
+    </div>
+    
+    <div class="img16">
+        <img src="Gallery/GradeTown/img16.PNG" alt="img16" height="300" width="300">
+    </div>
+    
+</section>
+
+
+<div class="img-line">
+    <img src="line.png" alt="Line">
+    <div class="overlay"></div>
+  </div>
+  
+
+<script>
+
+    const colors = ['', 'lightCyan', 'darkSkyBlue', 'aquamarine', 'electricBlue'];
+    const sections = [...document.querySelectorAll('section')];
+
+    window.addEventListener('scroll', function () {
+        const scrollFromTop = window.pageYOffset;
+
+        for (let i = 0; i < sections.length; i++) {
+            const sectionTop = sections[i].offsetTop;
+            const sectionBottom = sectionTop + sections[i].offsetHeight;
+
+            console.log(`Scroll Position: ${scrollFromTop}`);
+            console.log(`Section ${i} - Top: ${sectionTop}, Bottom: ${sectionBottom}`);
+
+            if (scrollFromTop >= sectionTop && scrollFromTop < sectionBottom) {
+                console.log(`Changing to color: ${colors[i]}`);
+                document.body.className = colors[i];
+                break;
+            }
+        }
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var gallery22 = document.querySelector(".gallery-22");
+        var image2 = document.querySelector(".image2");
+        var image3 = document.querySelector(".image3");
+        var image4 = document.querySelector(".image4");
+        var image5 = document.querySelector(".image5");
+        var image6 = document.querySelector(".image6");
+        var image7 = document.querySelector(".image7");
+        var image8 = document.querySelector(".image8");
+        var image9 = document.querySelector(".image9");
+        var image10 = document.querySelector(".image10");
+        var image11 = document.querySelector(".image11");
+        var image12 = document.querySelector(".image12");
+        var image13 = document.querySelector(".image13");
+        var image14 = document.querySelector(".image14");
+        var image15 = document.querySelector(".image15");
+        var image16 = document.querySelector(".image16");
+        var image17 = document.querySelector(".image17");
+        var image18 = document.querySelector(".image18");
+        var image19 = document.querySelector(".image19");
+        var image20 = document.querySelector(".image20");
+        var image21 = document.querySelector(".image21");
+        var image22 = document.querySelector(".image22");
+        var image23 = document.querySelector(".image23");
+        var image24 = document.querySelector(".image24");
+        var image25 = document.querySelector(".image25");
+        var image26 = document.querySelector(".image26");
+
+        var Image1 = document.querySelector(".Image1");
+        var Image2 = document.querySelector(".Image2");
+        var Image3 = document.querySelector(".Image3");
+        var Image4 = document.querySelector(".Image4");
+        var Image5 = document.querySelector(".Image5");
+        var Image6 = document.querySelector(".Image6"); 
+        var Image7 = document.querySelector(".Image7"); 
+        var Image8 = document.querySelector(".Image8"); 
+        var Image9 = document.querySelector(".Image9");
+        var Image10 = document.querySelector(".Image10");
+        var Image11 = document.querySelector(".Image11");
+        var Image12 = document.querySelector(".Image12");
+        var Image13 = document.querySelector(".Image13");
+        var Image14 = document.querySelector(".Image14");
+        var Image15 = document.querySelector(".Image15");
+        var Image16 = document.querySelector(".Image16");
+        var Image17 = document.querySelector(".Image17");
+        var Image18 = document.querySelector(".Image18");
+        var Image19 = document.querySelector(".Image19");
+        var Image20 = document.querySelector(".Image20");
+
+        var img1 = document.querySelector(".img1");
+        var img2 = document.querySelector(".img2");
+        var img3 = document.querySelector(".img3");
+        var img4 = document.querySelector(".img4");
+        var img5 = document.querySelector(".img5");
+        var img6 = document.querySelector(".img6"); 
+        var img7 = document.querySelector(".img7"); 
+        var img8 = document.querySelector(".img8"); 
+        var img9 = document.querySelector(".img9");
+        var img10 = document.querySelector(".img10");
+        var img11 = document.querySelector(".img11");
+        var img12 = document.querySelector(".img12");
+        var img13 = document.querySelector(".img13");
+        var img14 = document.querySelector(".img14");
+        var img15 = document.querySelector(".img15");
+        var img16 = document.querySelector(".img16");
+
+        function animateImages() {
+            gallery22.classList.add("animate");
+            image2.classList.add("animate");
+            image3.classList.add("animate");
+            image4.classList.add("animate");
+            image5.classList.add("animate");
+            image6.classList.add("animate");
+            image7.classList.add("animate");
+            image8.classList.add("animate");
+            image9.classList.add("animate");
+            image10.classList.add("animate");
+            image11.classList.add("animate");
+            image12.classList.add("animate");
+            image13.classList.add("animate");
+            image14.classList.add("animate");
+            image15.classList.add("animate");
+            image16.classList.add("animate");
+            image17.classList.add("animate");
+            image18.classList.add("animate");
+            image19.classList.add("animate");
+            image20.classList.add("animate");
+            image21.classList.add("animate");
+            image22.classList.add("animate");
+            image23.classList.add("animate");
+            image24.classList.add("animate");
+            image25.classList.add("animate");
+            image26.classList.add("animate");
+
+            Image1.classList.add("animate");
+            Image2.classList.add("animate");
+            Image3.classList.add("animate");
+            Image4.classList.add("animate");
+            Image5.classList.add("animate");
+            Image6.classList.add("animate");
+            Image7.classList.add("animate");
+            Image8.classList.add("animate");
+            Image9.classList.add("animate");
+            Image10.classList.add("animate");
+            Image11.classList.add("animate");
+            Image12.classList.add("animate");
+            Image13.classList.add("animate");
+            Image14.classList.add("animate");
+            Image15.classList.add("animate");
+            Image16.classList.add("animate");
+            Image17.classList.add("animate");
+            Image18.classList.add("animate");
+            Image19.classList.add("animate");
+            Image20.classList.add("animate");
+
+            img1.classList.add("animate");
+            img2.classList.add("animate");
+            img3.classList.add("animate");
+            img4.classList.add("animate");
+            img5.classList.add("animate");
+            img6.classList.add("animate");
+            img7.classList.add("animate");
+            img8.classList.add("animate");
+            img9.classList.add("animate");
+            img10.classList.add("animate");
+            img11.classList.add("animate");
+            img12.classList.add("animate");
+            img13.classList.add("animate");
+            img14.classList.add("animate");
+            img15.classList.add("animate");
+            img16.classList.add("animate");
+        }
+
+        // Animate all images on page load
+        animateImages();
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
